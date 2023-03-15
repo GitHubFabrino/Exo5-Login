@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Exo5_Formulaire</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#" method="get" class="div1">
+            <div class="flex">
+                <div class="style1"></div>
+                <div class="form1">
+
+                    <input class="remplir" type="text" required name="nom" id="nom" placeholder="Nom"><br>
+                    <input class="remplir" type="text" required name="prenom" id="prenom" placeholder="Prenom"><br>
+                    <input class="remplir" type="text" required name="adresse" id="adresse" placeholder="Votre adresse"><br>
+                    <input class="remplir" type="text" required name="mail" id="mail" placeholder="example@gmail.com"><br>
+                    <select name="pays" id="pays">
+                        <option value="+045">+045</option>
+                        <option value="+326">+326</option>
+                        <option value="+598">+598</option>
+                        <option value="+261">+261</option>
+                    </select><input class="remplir_tel" type="text" name="tel" id="tel" placeholder="0000000"><br>
+                </div>
+                <div class="style2"></div>
+                <div class="form1">
+                    <select name="region" id="region">
+                        <option value="ville" class="ville" selected>Ville d'origine</option>
+                        <option value="Antananarivo">Antananarivo</option>
+                        <option value="Fianaratsoa">Fianaratsoa</option>
+                        <option value="Antsiranana">Antsiranana</option>
+                        <option value="Toamasina">Toamasina</option>
+                        <option value="Mahajanga">Mahajanga</option>
+                        <option value="Toliara">Toliara</option>
+                    </select><br>
+                    <div class="genre">
+                        <label for="femme">Femme</label>
+                        <input type="radio" name="Femme" id="Femme">
+                        <label for="homme">Homme</label>
+                        <input type="radio" name="Homme" id="Homme">
+                    </div>
+                    <input type="date" name="date" id="date" class="remplir"><br>
+                    <span><label for="langue">LANGUE METRISER :</label></span>
+                    <div class="#">
+                        <table>
+                            <tr>
+                                <th>Malagasy</th>
+                                <td><input type="checkbox" name="mlg" id="mlg" ></td>
+                                <th>Anglais</th>
+                                <td><input type="checkbox" name="ang" id="ang"></td>
+                            </tr>
+                            <tr>
+                                <th>Francais</th>
+                                <td><input type="checkbox" name="fr" id="fr"></td>
+                                <th>Espagniol</th>
+                                <td><input type="checkbox" name="espa" id="espa"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">
+                <div id="click_msg">
+                    <h4>Commentaire</h4>
+                </div>
+                <div id="champ"><input type="text-area" name="commentaire" id="commentaire"
+                        placeholder="Ecriver votre commentaire"></div>
+            </div>
+            <div class="flex">
+                <button type="submit" id="send">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
